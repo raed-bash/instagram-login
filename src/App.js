@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { Box } from "@mui/material";
+import Language from "./components/language";
+import Logo from "./components/logo";
+import Form from "./components/form";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box>
+      <Language
+        sx={{ fontFamily: "Helvetica, Arial, sans-serif", margin: "0 auto" }}
+      />
+      <Box sx={{ width: "max-content", margin: "0 auto" }}>
+        <Logo />
+        <Form />
+      </Box>
+    </Box>
   );
 }
 
